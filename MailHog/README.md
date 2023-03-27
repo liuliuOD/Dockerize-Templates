@@ -2,12 +2,13 @@
 
 ## Environment
 
-- expose port
-  - 8025
+- Port outside container / inside container local
+  - 1025 / 1025
+  - 8025 / 8025
 - data volume
   - mailhog-volume
 - version
-  - 1.27.4
+  - 1.0.1
 
 ## Build
 
@@ -17,6 +18,6 @@ $ docker-compose up -d
 
 ## Reference
 
-- https://github.com/mailhog/MailHog
-- https://hub.docker.com/r/mailhog/mailhog/
+- [GitHub](https://github.com/mailhog/MailHog)
+- [Docker](https://hub.docker.com/r/mailhog/mailhog)
 
