@@ -20,5 +20,5 @@ If you have a Dockerfile or docker-compose.yml template that you'd like to contr
 
 ## License
 
-This project is released under the MIT license. See the LICENSE file for more details.
+This project is released under the AGPL v3 license. See the [LICENSE](./LICENSE) file for more details.
 
