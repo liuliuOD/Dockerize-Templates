@@ -7,12 +7,7 @@ services:
     ports:
       - 1025:1025
       - 8025:8025
-    restart: always
+    restart: on-failure
     environment:
-      - MH_STORAGE=maildir # memory / mongodb / maildir
-      - MH_MAILDIR_PATH=/mail-volume
-    volumes:
-      - mailhog-volume:/mail-volume
-volumes:
-  mailhog-volume:
+      - MH_STORAGE=maildir # memory || mongodb || maildir
 
