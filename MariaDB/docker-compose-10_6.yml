@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  mariadb:
+    image: mariadb:10.6-focal
+    container_name: mariadb-10.6
+    ports:
+      - "9100:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: liuliu
+      MYSQL_USER: liuliu
+      MYSQL_PASSWORD: 123456
+    volumes:
+      - mariadb-volume:/var/lib/mariadb
+    restart: always
+
+volumes:
+  mariadb-volume:
