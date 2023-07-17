@@ -9,10 +9,15 @@ This project contains a collection of Dockerfile and docker-compose.yml template
 - Comprehensive README files for each template, explaining how to use and customize the template for your needs
 
 ## Current Templates
-|Mail|RDBMS|NoSQL|Vector Search Engine|
-|-:|-:|-:|-:|
-|[MailHog](./MailHog/README.md)|[MariaDB](./MariaDB/README.md)|[Redis](./Redis/README.md)|[Qdrant](./Qdrant/README.md)|
-|-|-|[Redis with RBook](./RedisWithRBook/README.md)|-|
+|RDBMS|NoSQL|Vector Search Engine|
+|-:|-:|-:|
+|[MariaDB](./MariaDB/README.md)|[Redis](./Redis/README.md)|[Qdrant](./Qdrant/README.md)|
+|-|[Redis with RBook](./RedisWithRBook/README.md)|-|
+
+|Service Name|Usage|
+|:-|:-|
+|[MailHog](./MailHog/README.md)|Mail|
+|[Supervisor](./Supervisor/README.md)|Process Management|
 
 ## Usage
 

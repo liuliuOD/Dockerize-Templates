@@ -10,4 +10,3 @@ services:
     restart: on-failure
     environment:
       - MH_STORAGE=maildir # memory || mongodb || maildir
-

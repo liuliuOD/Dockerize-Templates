@@ -20,4 +20,3 @@ $ docker-compose up -d
 
 - [GitHub](https://github.com/mailhog/MailHog)
 - [Docker](https://hub.docker.com/r/mailhog/mailhog)
-

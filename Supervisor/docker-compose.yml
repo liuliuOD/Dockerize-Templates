@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  supervisor:
+    build:
+      context: .
+    container_name: supervisor
+    ports:
+      - 9001:9001 # for Supervisor UI

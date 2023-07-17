@@ -22,4 +22,3 @@ $ docker-compose up -d
 
 - [GitHub](https://github.com/qdrant/qdrant)
 - [Docker](https://hub.docker.com/r/qdrant/qdrant)
-
