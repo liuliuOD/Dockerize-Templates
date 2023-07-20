@@ -16,6 +16,12 @@ This is an UI package for Redis Client-Side execution. You can run redis command
 ## Build
 
 ```bash
+$ docker-compose build
+```
+
+## Run Container
+
+```bash
 $ docker-compose up -d
 ```
 

@@ -13,6 +13,12 @@
 ## Build
 
 ```bash
+$ docker-compose build
+```
+
+## Run Container
+
+```bash
 $ docker-compose up -d
 ```
 

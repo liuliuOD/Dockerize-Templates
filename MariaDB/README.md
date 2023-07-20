@@ -15,5 +15,11 @@
 
 ```bash
 # MariaDB v10.6
+$ docker-compose -f docker-compose-10_6.yml build
+```
+
+## Run Container
+
+```bash
 $ docker-compose -f docker-compose-10_6.yml up -d
 ```
