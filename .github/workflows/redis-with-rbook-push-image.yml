@@ -2,8 +2,8 @@ name: redis-with-rbook-push-image
 on:
   push:
     paths:
-      - 'RedisWithRbook/Dockerfile'
-      - 'RedisWithRbook/docker-compose.yml'
+      - 'RedisWithRBook/Dockerfile'
+      - 'RedisWithRBook/docker-compose.yml'
 
 env:
   REPOSITORY: redis-with-rbook
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./RedisWithRbook
+        working-directory: ./RedisWithRBook
     steps:
       - name: checkout the repository
         uses: actions/checkout@v3
