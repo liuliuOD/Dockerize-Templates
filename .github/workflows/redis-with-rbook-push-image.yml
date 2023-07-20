@@ -1,0 +1,28 @@
+name: redis-with-rbook-push-image
+on:
+  push:
+    paths:
+      - 'RedisWithRbook/Dockerfile'
+      - 'RedisWithRbook/docker-compose.yml'
+
+env:
+  REPOSITORY: redis-with-rbook
+
+jobs:
+  docker-flow:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./RedisWithRbook
+    steps:
+      - name: checkout the repository
+        uses: actions/checkout@v3
+      - name: login docker
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: build image
+        run: docker-compose build
+      - name: push image
+        run: docker push ${{ secrets.DOCKER_USER }}/${{ env.REPOSITORY }}
