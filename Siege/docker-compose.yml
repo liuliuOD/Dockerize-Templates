@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  siege:
+    image: dockliu/siege
+    build:
+      context: .
+      args:
+        - VERSION=4.0.4-1build1
