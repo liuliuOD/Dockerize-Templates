@@ -14,7 +14,7 @@ You can search **[dockliu](https://hub.docker.com/search?q=dockliu%2F)** in Dock
 |RDBMS|NoSQL|Vector Search Engine|
 |-:|-:|-:|
 |[MariaDB](./MariaDB/README.md)|[Redis](./Redis/README.md)|[Qdrant](./Qdrant/README.md)|
-|-|[Redis with RBook](./RedisWithRBook/README.md)|-|
+|[MySQL](./MySQL/README.md)|[Redis with RBook](./RedisWithRBook/README.md)|-|
 |-|[MongoDB](./MongoDB/README.md)|-|
 
 |Service Name|Usage|
