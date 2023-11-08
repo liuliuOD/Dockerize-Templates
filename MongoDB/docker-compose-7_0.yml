@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:7.0-rc
+    container_name: mongodb-7.0
+    restart: always
+    ports:
+      - "9500:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - mongodb-volume:/var/lib/mongodb
+
+volumes:
+  mongodb-volume:
