@@ -10,8 +10,10 @@
 - data volume
   - mysql-volume
 
-- version
-  - MySQL: custom the version you want to use in `.env` file, you can find an example in `.env.example`.
+## Setting in .env
+
+- VERSION
+  - custom the version you want to use in `.env` file, you can find an example in `.env.example`.
 
 ## Build
 
