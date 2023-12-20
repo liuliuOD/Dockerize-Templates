@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    environment:
+      NGROK_AUTHTOKEN: $NGROK_AUTHTOKEN
+      NAME: $CONTAINER_NAME
+      PORT: $PORT
+    networks:
+      - custom
+networks:
+  custom:
+    external: true
+    name: $NETWORK
